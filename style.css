@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --card:#FAF7F5;
+    --main-color:#EFEAE3;
+    --btn-color:#B87E66;
+    --heading-color:#17120F;
+    --leaves:#777967;
+}
+body{
+    background: url("./images/background.png") no-repeat;
+     font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.container{
+    width: 850px;
+    margin: 100px auto;
+    border-radius: 28px 25px;
+    background-color: var(--main-color);
+    padding: 20px 25px 15px;
+}
+.header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+.header  h2{
+    margin-left: 15px;
+    font-size: 48px;
+    font-weight: 500;
+}
+.header p{
+    position: absolute;
+    bottom:20px;
+    left: 100px;
+    font-size: 14px;
+    color: var(--leaves);
+    letter-spacing: 5px;
+    word-spacing: 2px;
+}
+.header p i {
+    color:var(--btn-color);
+}
+.header img{
+    width: 100px;
+    height: 150px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+input{
+    width: 85%;
+    margin: 20px 0;
+    padding: 15px 22px ;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    font-size: 18px;
+   background-color:var(--card);
+
+}
+.btn{
+    padding: 10px 35px;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    background-color:var(--btn-color);
+    color:#fff;
+    font-size: 18px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+/* ul{
+    display: flex;
+} */
+ul li{
+   list-style: none;
+   margin-bottom: 15px;
+   background-color:var(--card);
+   padding: 12px 8px 12px 50px ;
+   position: relative;
+}
+ul li span{
+    position: absolute;
+    top:10;
+    right: 25px;
+    cursor: pointer;
+    color: rgba(170, 7, 7, 0.663);
+    font-size: 18px;
+    text-align: center;
+}
+.todo-list ul li::before{
+    content: "";
+    position: absolute;
+    top: -18px;
+    left:-15px;
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    background:url("./images/check.png") center/cover;
+}
+.todo-list ul li.checked::before{
+       background:url("./images/ChatGPT_Image_Sep_9__2026__02_28_59_AM-removebg-preview.png") center/cover; 
+
+}
+.todo-list ul li.checked {
+    text-decoration: line-through;
+}

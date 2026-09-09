@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+        <div class="todo-list">
+            <div class="header">
+        <img src="images/header.png" alt="planet" />
+        <h2 class="header-text">To Do List</h2>
+        <p>SMALL STEPS BIG PROGRESS <i class="fa-solid fa-heart"></i></p>
+      </div>
+      <div class="row">
+        <input type="text" id="input-value" placeholder="Add a new task..." />
+      <button class="btn">add</button>
+      </div>
+      <ul id="task-list">
+        <!-- <li class="checked">
+          task1 <span><i class="fa-solid fa-trash"></i></span>
+        </li>
+        <li>
+          task1 <span><i class="fa-solid fa-trash"></i></span>
+        </li>
+        <li>
+          task1 <span><i class="fa-solid fa-trash"></i></span>
+        </li> -->
+      </ul>
+        </div>
+     
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
