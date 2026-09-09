@@ -116,5 +116,7 @@ ul li span{
 }
 
 @media (max-width: 767px) {
-    
+    body{
+        background: url("./images/background-phone.png") no-repeat;
+    }
 }
