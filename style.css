@@ -18,7 +18,7 @@ body{
   font-style: normal;
 }
 .container{
-    width: 850px;
+    width: 80%;
     margin: 100px auto;
     border-radius: 28px 25px;
     background-color: var(--main-color);
@@ -113,4 +113,8 @@ ul li span{
 }
 .todo-list ul li.checked {
     text-decoration: line-through;
+}
+
+@media (max-width: 767px) {
+    
 }
