@@ -57,8 +57,8 @@ body{
     align-items:center;
 }
 input{
-    width: 85%;
-    margin: 20px 0;
+    width: 80%;
+    margin: 20px 10px;
     padding: 15px 22px ;
     border: 0;
     outline: 0;
@@ -119,4 +119,20 @@ ul li span{
     body{
         background: url("./images/background-phone.png") no-repeat;
     }
+    .header  h2{
+    font-size: 38px;
+}
+.header{
+    margin-bottom:35px;
+
+}
+.header p{
+    bottom:-15px;
+    left: 80px;
+    font-size: 14px;
+}
+.header img{
+    width: 70px;
+    height: 100px;
+}
 }
